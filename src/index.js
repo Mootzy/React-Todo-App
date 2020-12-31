@@ -1,17 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react"
+import ReactDOM from "react-dom"
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+//component file
+import ToDoContainer from "./components/TodoContainer"
+import "./App.css"
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+
+
+//const element = <h1>Hello friends</h1>
+
+//first arg is what to render second arg is where to render it -> index.html
+ReactDOM.render(<ToDoContainer />, document.getElementById("root"))
+
+
+
+//ReactDOM.render(element, document.getElementById("root"))
